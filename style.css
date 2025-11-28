@@ -1,0 +1,128 @@
+/* ====== CONFIGURAÇÕES GERAIS ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: white;
+}
+
+/* ====== CABEÇALHO ====== */
+.cabeçalho {
+    background-color: #073763;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.cabeçalho-título {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cabeçalho-imagem {
+    width: 120px;
+}
+
+.cabeçalho-lista {
+    list-style: none;
+}
+
+.cabeçalho-lista-item02 {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cabeçalho-lista-item02:hover {
+    color: #6fa8dc;
+}
+
+/* ====== QUEM SOMOS ====== */
+.quem-somos {
+    padding: 50px;
+    text-align: center;
+}
+
+.quem-somos-div {
+    max-width: 800px;
+    margin: auto;
+}
+
+.quem-somos h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.Quem-somos-texto1 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.quem-somos-imagem {
+    width: 250px;
+    margin-top: 20px;
+}
+
+/* ====== SESSÃO FILMES ====== */
+.filmes {
+    padding: 40px;
+}
+
+.filmes h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+/* MODELO PADRÃO PARA OS CARDS */
+.filmes div {
+    background-color: #111;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filmes img {
+    width: 200px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.filmes h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.filmes p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 700px) {
+
+    .cabeçalho {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .filmes img {
+        width: 100%;
+    }
+
+    .filmes div {
+        padding: 20px;
+    }
+}
